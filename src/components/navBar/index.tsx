@@ -7,12 +7,13 @@ import NavBarButton from "./utils/navBarButton";
 
 //utils
 import { handleScroll } from "./utils/handleScroll";
+import BurgerMenu from "./utils/burgerMenu";
 
 const NavBar: React.FC = (): ReactElement => {
   return (
     <header className='sticky w-full top-0 p-0 z-30 shadow-xl '>
       <nav className='p-6 bg-gradient-to-tr from-gray-200 via-white to-neutral-300'>
-        <div className='flex justify-between items-center max-w-[1400px] mx-auto -sm:flex-col'>
+        <div className='flex justify-between items-center max-w-[1400px] mx-auto -sm:flex-row-reverse'>
           <Image
             src='/logo/logo.png'
             alt='Gráfica e Editora Mesquita'
@@ -20,7 +21,8 @@ const NavBar: React.FC = (): ReactElement => {
             height={100}
           />
           <div>
-            <ul className='flex '>
+            <BurgerMenu />
+            <ul className='flex -sm:hidden'>
               {routers.map((router) => {
                 return (
                   <li className='mx-2' key={router.name}>

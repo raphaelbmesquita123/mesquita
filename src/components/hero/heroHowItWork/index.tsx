@@ -13,9 +13,9 @@ import gearAnimation from "./utils/json/gearAnimation.json";
 
 const HeroHowItWork: React.FC = (): ReactElement => {
   return (
-    <section className='flex flex-col items-center mt-24'>
-      <Title title='Como trabalhamos' subtitle='Nossos projetos' />
-      <div className='grid grid-cols-[repeat(auto-fit,_minmax(240px,_1fr))] gap-10 px-8 py-28 max-w-[1400px] mx-auto w-full'>
+    <section className='flex flex-col items-center mt-24 mx-4'>
+      <Title title='Projetos' subtitle='Como Trabalhamos' />
+      <div className='grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))]  gap-10 px-8 py-28 max-w-[1400px] mx-auto w-full'>
         <Card
           title='Etapa 1'
           description='Receba seu Orçaamento por email ou Whatsapp'

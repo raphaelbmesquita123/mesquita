@@ -23,7 +23,7 @@ export function Title({
       <h3
         className={`${
           color === "dark" ? "text-black" : "text-white"
-        } uppercase text-xl`}
+        } uppercase text-base font-oswald `}
       >
         {subtitle}
       </h3>
@@ -32,10 +32,10 @@ export function Title({
         alt='detail'
         width={280}
         height={20}
-        className='w-[80%] h-2'
+        className='w-[50%] h-2'
       />
       <h1
-        className={`text-[3.5rem] ${alignTitle} ${
+        className={`text-[3rem] ${alignTitle} ${
           color === "dark" ? "text-black" : "text-white"
         } capitalize -md:text-[2.5rem]`}
       >
